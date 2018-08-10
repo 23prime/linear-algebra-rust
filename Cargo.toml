@@ -1,0 +1,6 @@
+[package]
+name = "linear_algebra"
+version = "0.1.0"
+authors = ["23prime <a23b23c23d23e@gmail.com>"]
+
+[dependencies]
