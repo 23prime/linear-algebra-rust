@@ -1,4 +1,4 @@
-#![allow(dead_code, type_alias_bounds)]
+#![allow(dead_code)]
 
 //! Define Matrix calculations.
 
@@ -7,7 +7,7 @@ extern crate num;
 
 use vector::scal_vec_prod;
 
-pub type Mat<T: num::traits::Num + std::fmt::Display + Copy> = Vec<Vec<T>>;
+pub type Mat<T> = Vec<Vec<T>>;
 
 fn mk_mat<T>(vs: Vec<Vec<T>>) -> Option<Mat<T>> {
     let l0 = vs[0].len();
